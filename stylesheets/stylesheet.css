@@ -355,20 +355,25 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: url('../images/tux.png') #f2f2f2 no-repeat  -5% 100%;
-  background-size: 35% auto;
+  background: url('../images/tux.png') #f2f2f2 -5% 100% no-repeat;
+  background-size: 30% auto;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
 
 #main_content {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 #footer_wrap {
   background: #0D0D0D;
+  background: -moz-linear-gradient(top, #252525, #0D0D0D);
+  background: -webkit-linear-gradient(top, #252525, #0D0D0D);
+  background: -ms-linear-gradient(top, #252525, #0D0D0D);
+  background: -o-linear-gradient(top, #252525, #0D0D0D);
+  background: linear-gradient(top, #252525, #0D0D0D);
 }
-
 
 
 /*******************************************************************************
