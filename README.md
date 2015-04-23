@@ -1,3 +1,3 @@
-rithms.github.io (taycaldwell.com)
+rithms.github.io (rithms.im)
 =====================
 My personal webpage
