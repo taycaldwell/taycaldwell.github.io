@@ -2,6 +2,10 @@ body {
 	padding-top: 50px;
 }
 
+h3 {
+	margin-top: 40px;
+}
+
 a, a:hover{
 	text-decoration: none;
 	color: #BC00D1;
