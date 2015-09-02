@@ -1,0 +1,18 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+a{
+text-decoration: none;
+color: #BC00D1;
+}
+
+.center {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+#mu {
+	margin-right: 10px;
+}
