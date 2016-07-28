@@ -1,49 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9 | !IE]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Taylor Caldwell</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='assets/css/vendor.css'>
+  <link rel='stylesheet' href='assets/css/theme_dark.css'>
+  <!--[if lte IE 9]><!-->
+  <script src='assets/js/vendor/html5shiv.min.js'></script>
+  <!--<![endif]-->
+</head>
+<body>
 
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+  <div class="site">
+    <div class="site-loader _multi-circle-line">
+      <div class="site-loader-spinner"></div>
+    </div> <!-- .site-loader -->
 
-    <title>rithms</title>
+    <div class="site-bg">
+      <div class="site-bg-video"></div>
+      <div class="site-bg-overlay"></div>
+      <div class="site-bg-effect layer" data-depth=".30"></div>
+      <canvas class="site-bg-canvas layer" data-depth=".30"></canvas>
+      <div class="site-bg-border"></div>
+    </div> <!-- .site-bg -->
 
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <div class="site-canvas">
+      <header class="site-header">
+        <div class="container">
+          <div class="site-header-header">
+            <div class="site-header-brand">
+            </div>
+            <a class="primary-nav-toggle" href="#">
+              <i class="fa fa-navicon"></i>
+            </a>
+          </div>
+          <div class="site-header-main">
+            <nav class="primary-nav">
+              <div class="primary-menu-container">
+                <ul class="primary-menu">
+                  <li class="primary-menu-item" data-section="#projects">
+                    <a href="#" data-hover="Projects"><span>Projects</span></a>
+                  </li>
+                  <li class="primary-menu-item is-active" data-section="#social">
+                    <a href="#"><i class="fa fa-share-alt"></i></a>
+                  </li>
+                  <li class="primary-menu-item audio-toggle">
+                    <a href="#"><i class="fa fa-volume-up"></i></a>
+                  </li> <!-- .audio-toggle -->
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header> <!-- .site-header -->
+      <main class="site-main">
+        <div id="nav" class="section">
+          <div class="section-table">
+            <div class="section-table-cell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="col-inner">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- for `> md` screen, control with `#nav` id -->
 
-    <link href="rithmic.css" rel="stylesheet">
+        <div id="social" class="section is-active">
+          <div class="section-table">
+            <div class="section-table-cell">
+              <div class="container">
+                <div class="row">
+				<div class="col-xs-12">
+                    <div class="col-inner">
+                      <div class="section-heading">
+                        <h2 class="section-title">Taylor Caldwell</h2>
+                        <p class="section-subtitle">Software Engineer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="col-inner">
+                      <div class="social-menu-container">
+                        <ul class="social-menu">
+                          <li class="social-item">
+                            <a href="https://twitter.com/TayCaldwell" target="_blank">
+                              <i class="fa fa-twitter"></i>
+                              <span>Twitter</span>
+                            </a> <!-- social link -->
+                          </li>
+                          <li class="social-item">
+                            <a href="https://github.com/rithms" target="_blank">
+                              <i class="fa fa-github"></i>
+                              <span>GitHub</span>
+                            </a>
+                          </li>
+                          <li class="social-item">
+                            <a href="https://www.linkedin.com/in/taycaldwell" target="_blank">
+                              <i class="fa fa-linkedin"></i>
+                              <span>LinkedIn</span>
+                            </a>
+                          </li>
+                          <li class="social-item">
+                            <a href="https://medium.com/@rithms" target="_blank">
+                              <i class="fa fa-medium"></i>
+                              <span>Medium</span>
+                            </a>
+						  </li>
+						  <li class="social-item">
+                            <a href="mailto:tay@rithms.net" target="_blank">
+                              <i class="fa fa-envelope"></i>
+                              <span>Contact</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- #social -->
 
-  </head>
+        <div id="projects" class="section">
+          <div class="section-table">
+            <div class="section-table-cell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="col-inner">
+                      <div class="section-heading">
+                        <h2 class="section-title">Projects</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="col-inner">
+                      <div id="serviceCarousel" class="owl-carousel">
+                        <div class="service-carousel-item iconbox _center">
+						  <a href="http://rithms.net/riot-api-java/" target="_blank">
+							  <div class="iconbox-icon">
+								<i class="fa fa-code"></i>
+							  </div>
+							  <div class="iconbox-heading">
+								<h4>riot-api-java</h4>
+							  </div>
+							  <div class="iconbox-content">
+								<p>A simple to use, Riot Games API wrapper for Java.</p>
+							  </div>
+						  </a>
+                        </div> <!-- .iconbox -->
 
-  <body>
+                        <div class="service-carousel-item iconbox _center">
+						  <a href="http://docs.hearthstone.apiary.io/#" target="_blank">
+							  <div class="iconbox-icon">
+								<i class="fa fa-code"></i>
+							  </div>
+							  <div class="iconbox-heading">
+								<h4>Hearth Card API</h4>
+							  </div>
+							  <div class="iconbox-content">
+								<p>A RESTful API for Blizzard Entertainment's popular online card game, Hearthstone.</p>
+							  </div>
+						  </a>
+                        </div> <!-- .iconbox -->
 
-    <div class="container">
+                        <div class="service-carousel-item iconbox _center">
+						  <a href="https://github.com/TaylorsSwift/lolesports-kit" target="_blank">
+							  <div class="iconbox-icon">
+								<i class="fa fa-code"></i>
+							  </div>
+							  <div class="iconbox-heading">
+								<h4>LoL eSports Kit</h4>
+							  </div>
+							  <div class="iconbox-content">
+								<p>League of Legends eSports iOS client library for accessing lolesports.com data</p>
+							  </div>
+						  </a>
+                        </div> <!-- .iconbox -->
 
-      <div class="center">
-        <h1><img src="images/kittyavatar.jpg" height="50px" id="mu" class="img-circle">rithms</h1>
+                        <div class="service-carousel-item iconbox _center">
+						  <a href="https://whosthatchampion.com/" target="_blank">
+							  <div class="iconbox-icon">
+								<i class="fa fa-gamepad"></i>
+							  </div>
+							  <div class="iconbox-heading">
+								<h4>Who's That Champion?</h4>
+							  </div>
+							  <div class="iconbox-content">
+								<p>A League of Legends guessing game, based on the special URF game mode.</p>
+							  </div>
+						  </a>
+                        </div> <!-- .iconbox -->
+						
+						<div class="service-carousel-item iconbox _center">
+						  <a href="http://itemsets.net/" target="_blank">
+							  <div class="iconbox-icon">
+								<i class="fa fa-gamepad"></i>
+							  </div>
+							  <div class="iconbox-heading">
+								<h4>ItemSets.net</h4>
+							  </div>
+							  <div class="iconbox-content">
+								<p>Generate League of Legends item sets from Featured Games.</p>
+							  </div>
+						  </a>
+                        </div> <!-- .iconbox -->
 
-        <h3><strong>Developer Tools</strong></h3>
-        <p class="lead"><a href="http://rithms.net/riot-api-java">riot-api-java</a> - Riot Games API Java Library</p>
-        <p class="lead"><a href="http://rithms.net/lolesports-kit/">eSports Kit</a> - Swift API for lolesports.com</p>
-        <p class="lead"><a href="http://docs.hearthstone.apiary.io/">Hearth Card API</a> - Hearthstone card data (JSON)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- #service -->
 
-        <h3><strong>Web Applications</strong></h3>
-        <p class="lead"><a href="http://itemsets.net">ItemSets.net</a></p>
-        <p class="lead"><a href="http://whosthatchampion.com">Who's That Champion?</a></p>
-
-        <h3><strong>Other Stuff</strong></h3>
-        <p class="lead"><a href="https://twitter.com/TayCaldwell">Twitter</a></p>
-        <p class="lead"><a href="https://github.com/rithms">GitHub</a></p>
-        <p class="lead"><a href="https://medium.com/@rithms">Medium</a></p>
-        <p class="lead"><a href="mailto:tay@rithms.net">Email</a></p>
-
-      </div>
-
+      </main> <!-- .site-main -->
     </div>
+  </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-  </body>
+  <script src="assets/js/vendor/jquery-1.11.3.min.js"></script>
+  <script src='assets/js/vendor/bootstrap.min.js'></script>
+  <script src='assets/js/vendor/plugin.js'></script>
+  <script src='assets/js/variable.js'></script>
+  <script src='assets/js/main.js'></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62513073-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
 </html>
