@@ -1608,9 +1608,9 @@ body {
 }
 
 .social-item:hover i {
-  -webkit-animation: jello 1s;
-       -o-animation: jello 1s;
-          animation: jello 1s;
+  -webkit-animation: rubberBand 1s;
+       -o-animation: rubberBand 1s;
+          animation: rubberBand 1s;
 }
 
 /**
