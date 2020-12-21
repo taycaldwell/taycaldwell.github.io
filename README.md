@@ -1,3 +1,3 @@
-taycaldwell.github.io (taycaldwell.com)
+taycaldwell.github.io
 =====================
 My personal webpage
